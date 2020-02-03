@@ -1,7 +1,6 @@
 <?php
 
-require '../src/Model/DAO.php';
-require '../src/Model/PostsDAO.php';
+
 
 
 use App\src\DAO\PostDAO;
@@ -29,7 +28,7 @@ use App\src\DAO\PostDAO;
 
         ?>
         <div>
-            <h2><a href="single.php?postId=<?= htmlspecialchars($post->id);?>"><?= htmlspecialchars($post->title);?></a></h2>
+            <h2><a href="../public/index.php?route=post&postId=<?= htmlspecialchars($post->id);?>"><?= htmlspecialchars($post->title);?></a></h2>
             <p><?= htmlspecialchars($post->content);?></p>
             <p>Créé le : <?= htmlspecialchars($post->created_date);?></p>
         </div>
