@@ -1,0 +1,18 @@
+# Project Indexes of Jetbrains Apps
+.idea/
+
+#images
+public/images/
+
+public/node_modules/
+
+# Dependencies php
+vendor/
+
+
+# DB Datas (UNCOMMENT THE FILE WHEN START USING TEMPLATE)
+config/db.sql
+
+# Database Connection Informations (UNCOMMENT THE FILE WHEN START USING TEMPLATE)
+config/db.php
+
