@@ -1,12 +1,4 @@
-<?php
 
-
-
-use App\src\DAO\PostDAO;
-use App\src\DAO\CommentDAO;
-
-
-?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -20,8 +12,7 @@ use App\src\DAO\CommentDAO;
     <h1>Mon blog</h1>
     <p>En construction</p>
     <?php
-    $post = new PostDAO();
-    $posts = $post->getPost($_GET['postId']);
+
     $post = $posts->fetch()
     ?>
     <div>
@@ -38,8 +29,7 @@ use App\src\DAO\CommentDAO;
     <div id="comments" class="text-left" style="margin-left: 50px">
         <h3>Commentaires</h3>
         <?php
-        $comment = new CommentDAO();
-        $comments = $comment->getCommentsFromPost($_GET['postId']);
+
         while($comment = $comments->fetch())
         {
             ?>

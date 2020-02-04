@@ -1,9 +1,8 @@
 <?php
 
-
 namespace App\config;
-use Exception;
 use App\src\controller\FrontController;
+use Exception;
 
 class Router
 {
@@ -13,7 +12,8 @@ class Router
             if(isset($_GET['route']))
             {
                 if($_GET['route'] === 'post'){
-                    require '../templates/single.php';
+                    $frontController = new FrontController();
+                    $frontController->post($_GET['postId']);
                 }
                 else{
                     echo 'page inconnue';

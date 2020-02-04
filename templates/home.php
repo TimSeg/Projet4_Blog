@@ -1,11 +1,7 @@
-<?php
 
 
 
 
-use App\src\DAO\PostDAO;
-
-?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -21,8 +17,7 @@ use App\src\DAO\PostDAO;
 
     <?php
 
-    $post = new PostDAO();
-    $posts = $post->getPosts();
+
     while($post = $posts->fetch())
     {
 

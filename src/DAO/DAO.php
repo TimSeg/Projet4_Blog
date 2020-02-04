@@ -28,14 +28,14 @@ abstract class DAO
 
     private function getConnection()
     {
-        //Tentative de connexion à la base de données
+        // try to connect to database
         try{
             $this->connection = new PDO(DB_HOST, DB_USER, DB_PASS);
             $this->connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            //On renvoie un message avec le mot-clé return
+            // send back message with "return"
             return $this->connection;
         }
-            //On lève une erreur si la connexion échoue
+            //get error if connection fails
         catch(Exception $errorConnection)
         {
             die ('Erreur de connexion :'.$errorConnection->getMessage());
