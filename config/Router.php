@@ -2,12 +2,14 @@
 
 namespace App\config;
 use App\src\controller\FrontController;
+use App\src\controller\ErrorController;
 use Exception;
 
 
 class Router
 {
     private $frontController;
+    private $errorController;
 
     public function __construct()
     {
@@ -23,7 +25,7 @@ class Router
                     $this->frontController->post($_GET['postId']);
                 }
                 else{
-                    echo 'page inconnue';
+                    $this->errorController->errorNotFound();
                 }
             }
             else{
@@ -32,7 +34,7 @@ class Router
         }
         catch (Exception $e)
         {
-            echo 'Erreur';
+            $this->errorController->errorServer();
         }
     }
 }
