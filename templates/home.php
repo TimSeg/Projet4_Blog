@@ -1,8 +1,4 @@
 
-
-
-
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -20,7 +16,7 @@
 
     while($post = $posts->fetch())
     {
-
+    
         ?>
         <div>
             <h2><a href="../public/index.php?route=post&postId=<?= htmlspecialchars($post->id);?>"><?= htmlspecialchars($post->title);?></a></h2>
