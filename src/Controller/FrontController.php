@@ -19,14 +19,14 @@ class FrontController
     public function home()
     {
         $posts = $this->postDAO->getPosts();
-        require '../templates/home.php';
+        require '../src/templates/home.php';
     }
 
     public function post($postId)
     {
         $posts = $this->postDAO->getPost($postId);
         $comments = $this->commentDAO->getCommentsFromPost($postId);
-        require '../templates/single.php';
+        require '../src/templates/single.php';
     }
 }
 

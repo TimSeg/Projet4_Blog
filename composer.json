@@ -1,11 +1,11 @@
 {
-  "name": "timseg/projet4_2e_blog",
+  "name": "timseg/projet4_blog",
   "version": "0.1.1",
   "description": "blog project for OpenClassrooms",
   "license": "MIT",
   "autoload": {
     "classmap": [
-      "src/","config/","templates/"
+      "src/","config/"
     ]
   },
   "require": {
