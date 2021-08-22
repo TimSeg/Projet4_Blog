@@ -245,16 +245,16 @@
     "packages-dev": [
         {
             "name": "tracy/tracy",
-            "version": "v2.8.4",
+            "version": "v2.8.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/tracy.git",
-                "reference": "cb7d3dcd9469aa2aa6722edf6bee2d5d75188079"
+                "reference": "f3d2d6a1230a0a1a7b116c071ae4937e5e30101a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/tracy/zipball/cb7d3dcd9469aa2aa6722edf6bee2d5d75188079",
-                "reference": "cb7d3dcd9469aa2aa6722edf6bee2d5d75188079",
+                "url": "https://api.github.com/repos/nette/tracy/zipball/f3d2d6a1230a0a1a7b116c071ae4937e5e30101a",
+                "reference": "f3d2d6a1230a0a1a7b116c071ae4937e5e30101a",
                 "shasum": ""
             },
             "require": {
@@ -313,9 +313,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/tracy/issues",
-                "source": "https://github.com/nette/tracy/tree/v2.8.4"
+                "source": "https://github.com/nette/tracy/tree/v2.8.6"
             },
-            "time": "2021-04-27T21:47:10+00:00"
+            "time": "2021-08-16T21:50:26+00:00"
         }
     ],
     "aliases": [],
@@ -325,5 +325,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
