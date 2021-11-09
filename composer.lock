@@ -245,22 +245,22 @@
     "packages-dev": [
         {
             "name": "tracy/tracy",
-            "version": "v2.8.6",
+            "version": "v2.8.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/tracy.git",
-                "reference": "f3d2d6a1230a0a1a7b116c071ae4937e5e30101a"
+                "reference": "1a18df64f6b745962e9a0bdf87eccfc62309e593"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/tracy/zipball/f3d2d6a1230a0a1a7b116c071ae4937e5e30101a",
-                "reference": "f3d2d6a1230a0a1a7b116c071ae4937e5e30101a",
+                "url": "https://api.github.com/repos/nette/tracy/zipball/1a18df64f6b745962e9a0bdf87eccfc62309e593",
+                "reference": "1a18df64f6b745962e9a0bdf87eccfc62309e593",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "ext-session": "*",
-                "php": ">=7.2 <8.1"
+                "php": ">=7.2 <8.2"
             },
             "conflict": {
                 "nette/di": "<3.0"
@@ -272,7 +272,7 @@
                 "nette/tester": "^2.2",
                 "nette/utils": "^3.0",
                 "phpstan/phpstan": "^0.12",
-                "psr/log": "^1.0"
+                "psr/log": "^1.0 || ^2.0 || ^3.0"
             },
             "type": "library",
             "extra": {
@@ -313,9 +313,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/tracy/issues",
-                "source": "https://github.com/nette/tracy/tree/v2.8.6"
+                "source": "https://github.com/nette/tracy/tree/v2.8.8"
             },
-            "time": "2021-08-16T21:50:26+00:00"
+            "time": "2021-11-08T23:40:20+00:00"
         }
     ],
     "aliases": [],
